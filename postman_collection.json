@@ -1,0 +1,72 @@
+{
+  "info": {
+    "name": "Simple Inventory API - Sample",
+    "_postman_id": "sample-collection-id",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Root",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Items",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "items"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Add Item",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \\\"name\\\": \\\"Sample Item\\\",\\n  \\\"quantity\\\": 5,\\n  \\\"price\\\": 199.99\\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "items"
+          ]
+        }
+      }
+    }
+  ]
+}

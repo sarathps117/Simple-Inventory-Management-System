@@ -1,0 +1,16 @@
+{
+  "name": "simple-inventory-api",
+  "version": "1.0.0",
+  "description": "Starter project for Simple Inventory Management System (Express + Mongoose)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.0",
+    "morgan": "^1.10.0",
+    "body-parser": "^1.20.2"
+  }
+}
